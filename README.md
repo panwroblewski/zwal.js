@@ -1,6 +1,10 @@
 # zwal.js
 zwal.js - automatic form validation library
 
+a working example can be found here:
+
+https://jsfiddle.net/panwroblewski/keksrcLe/
+
 To hook validation to a form just add a '.zwal' class to form you want to validate.
 
 Then use html data attributes to set rules for particular fields. These can be used:
