@@ -1,0 +1,37 @@
+$zwal-error-text-color: red;
+$zwal-error-bg-color: #F2DEDE;
+$zwal-success-text-color: #3adb76;
+$zwal-success-bg-color: #DFF0D8;
+
+.zwal-success-after-error.zwal-is-valid {
+
+  background-color: $zwal-success-bg-color;
+  
+  &:focus {
+    background-color: $zwal-success-bg-color;
+  }
+}
+.zwal-not-valid {
+
+  background-color: $zwal-error-bg-color;
+
+  &:focus {
+    background-color: $zwal-error-bg-color;
+  }
+}
+.zwal-message {
+
+  //position: absolute;
+
+  &.zwal-error-message::before {
+    content: '';
+    width: 0;
+    height: 1px;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent $zwal-error-text-color transparent;
+    display: inline-block;
+    vertical-align: text-top;
+    margin: .1rem 1rem 0 2rem;
+  }
+}
